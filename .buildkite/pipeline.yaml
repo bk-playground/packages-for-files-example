@@ -1,0 +1,9 @@
+steps:
+  - key: push
+    label: :buildkite: push the package to buildkite packages
+    commands: 
+    - .buildkite/scripts/publish.sh
+  - label: :buildkite: download the package from buildkite packages
+    commands:
+    - .buildkite/scripts/download.sh
+    depends_on: push
