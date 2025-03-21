@@ -1,6 +1,7 @@
 #!/bin/bash
 
 BK_REGISTRY_SLUG=autopkg
+BK_PACKAGE_URL=https://packages.buildkite.com/$BUILDKITE_ORGANIZATION_SLUG/$BK_REGISTRY_SLUG
 
 timestamp=$(date +%s)
 

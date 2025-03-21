@@ -3,7 +3,6 @@
 set -euo pipefail
 
 BK_REGISTRY_SLUG=autopkg
-
 BK_PACKAGE_URL=https://packages.buildkite.com/$BUILDKITE_ORGANIZATION_SLUG/$BK_REGISTRY_SLUG
 
 buildkite_api_token=$(buildkite-agent oidc request-token --audience "$BK_PACKAGE_URL" --lifetime 300)
